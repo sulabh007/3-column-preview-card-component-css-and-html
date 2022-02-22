@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    html{
+      height: 100%;
+    }
+    body{
+      font-family: 'Lexend Deca', sans-serif;
+      height: 100%;
+      color: white;
+      font-size: 15px;
+    }
+    .box{
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    @media(max-width:500px){
+      .container{
+      width: 327px;
+      height: 1326px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      }
+      .column{
+      width: 327px;
+      height: 442px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: center;
+      }
+      .text{
+        margin: 48px;
+      }
+      button{
+      margin-top: 25px;
+      }
+      #col1{
+      border-radius: 8px 8px 0 0;
+      background-color: hsl(31, 77%, 52%);
+      }
+      
+      #col3{
+        border-radius: 0 0 8px 8px;
+        background-color: hsl(179, 100%, 13%);
+      }
+    }
+    @media(min-width:500px){
+      body{
+        height: 100%;
+      }
+      .container{
+      width: 920px;
+      height: 500px;
+      display: flex;
+      }
+      .column{
+      padding: 50px 40px 50px 55px;
+      width: 100%;
+      max-width: 306px;
+      }
+      button{
+        margin-top: 68px;
+      }
+      #col1{
+        border-radius: 8px 0 0 8px;
+        background-color: hsl(31, 77%, 52%);
+      }
+      #col3{
+        border-radius: 0 8px 8px 0;
+        background-color: hsl(179, 100%, 13%);
+      }
+    }
+    .container{
+      margin: auto;
+    }
+    h1{
+      text-transform: uppercase;
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 40px;
+      margin-top: 30px;
+    }
+    button{
+      width: 146px;
+      height: 48px;
+      border-radius: 23px;
+      background-color: white;
+      border: 0;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    p{
+      line-height: 1.65;
+    }
+    button:hover{
+      background-color: transparent;
+      outline: solid;
+      outline-width: 2px;
+      outline-color: white;
+      
+    }
+    #button1:hover, #button2:hover, #button3:hover{
+      color: white;
+    }
+    
+    #button1{
+      color: hsl(31, 77%, 52%);
+    }
+    #button2{
+      color:hsl(184, 100%, 22%);
+    }
+    #button3{
+      color: hsl(179, 100%, 13%);
+    }
+    #col2{
+      background-color:hsl(184, 100%, 22%);
+    }
+  </style>
+</head>
+<body>
+  <main class="box">
+    <div class="container">
+      <div class="column" id="col1">
+        <div class="text">
+          <img src="images/icon-sedans.svg" alt="icon1">
+          <h1>Sedans</h1>
+          <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+            or on your next road trip.</p>
+          <button id="button1">Learn More</button>
+        </div>
+        
+      </div>
+      <div class="column" id="col2">
+          <div class="text">
+            <img src="images/icon-suvs.svg" alt="icon2">
+          <h1>SUVs</h1>
+        <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+        and off-road adventures.</p>
+        <button id="button2">Learn More</button>
+          </div>
+        
+        
+      </div>
+      <div class="column" id="col3">
+          <div class="text">
+            <img src="images/icon-luxury.svg" alt="icon3">
+                  <h1>Luxury</h1>
+        <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+        rental and arrive in style.</p>
+        <button id="button3">Learn More</button>
+          </div>
+        
+
+      </div>
+    </div>
+    
+  </main>
+  
+
+  
+</body>
+</html>
