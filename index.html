@@ -20,8 +20,9 @@
     body{
       font-family: 'Lexend Deca', sans-serif;
       height: 100%;
-      color: white;
+      color:  hsla(0, 0%, 100%, 0.75);
       font-size: 15px;
+      background-color:  hsla(0, 0%, 100%, 0.75);
     }
     .box{
       display: flex;
@@ -31,30 +32,30 @@
     }
     @media(max-width:500px){
       .container{
-      width: 327px;
-      height: 1326px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+        width: 327px;
+        height: 1326px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
       .column{
-      width: 327px;
-      height: 442px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      align-content: center;
+        width: 327px;
+        height: 442px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
       }
       .text{
         margin: 48px;
       }
       button{
-      margin-top: 25px;
+        margin-top: 25px;
       }
       #col1{
-      border-radius: 8px 8px 0 0;
-      background-color: hsl(31, 77%, 52%);
+        border-radius: 8px 8px 0 0;
+        background-color: hsl(31, 77%, 52%);
       }
       
       #col3{
@@ -63,18 +64,15 @@
       }
     }
     @media(min-width:500px){
-      body{
-        height: 100%;
-      }
       .container{
-      width: 920px;
-      height: 500px;
-      display: flex;
+        width: 920px;
+        height: 500px;
+        display: flex;
       }
       .column{
-      padding: 50px 40px 50px 55px;
-      width: 100%;
-      max-width: 306px;
+        padding: 50px 40px 50px 55px;
+        width: 100%;
+        max-width: 306px;
       }
       button{
         margin-top: 68px;
@@ -101,7 +99,7 @@
       width: 146px;
       height: 48px;
       border-radius: 23px;
-      background-color: white;
+      background-color: hsla(0, 0%, 100%, 0.75);
       border: 0;
       cursor: pointer;
       font-weight: 700;
@@ -113,11 +111,11 @@
       background-color: transparent;
       outline: solid;
       outline-width: 2px;
-      outline-color: white;
+      outline-color: hsla(0, 0%, 100%, 0.75);
       
     }
     #button1:hover, #button2:hover, #button3:hover{
-      color: white;
+      color: hsla(0, 0%, 100%, 0.75);
     }
     
     #button1{
@@ -150,10 +148,10 @@
       <div class="column" id="col2">
           <div class="text">
             <img src="images/icon-suvs.svg" alt="icon2">
-          <h1>SUVs</h1>
-        <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
-        and off-road adventures.</p>
-        <button id="button2">Learn More</button>
+            <h1>SUVs</h1>
+            <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+            and off-road adventures.</p>
+            <button id="button2">Learn More</button>
           </div>
         
         
@@ -161,10 +159,10 @@
       <div class="column" id="col3">
           <div class="text">
             <img src="images/icon-luxury.svg" alt="icon3">
-                  <h1>Luxury</h1>
-        <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-        rental and arrive in style.</p>
-        <button id="button3">Learn More</button>
+            <h1>Luxury</h1>
+            <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+            rental and arrive in style.</p>
+            <button id="button3">Learn More</button>
           </div>
         
 
